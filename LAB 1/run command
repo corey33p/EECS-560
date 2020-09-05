@@ -1,0 +1,13 @@
+./a.out Instance_files/instance1.txt out1.txt
+
+./a.out Instance_files/instance1.txt out1.txt
+./a.out Instance_files/instance2.txt out2.txt
+./a.out Instance_files/instance3.txt out3.txt
+./a.out Instance_files/instance4.txt out4.txt
+./a.out Instance_files/instance5.txt out5.txt
+./a.out Instance_files/instance6.txt out6.txt
+./a.out Instance_files/instance7.txt out7.txt
+./a.out Instance_files/instance8.txt out8.txt
+./a.out Instance_files/instance9.txt out9.txt
+./a.out Instance_files/instance10.txt out10.txt
+
