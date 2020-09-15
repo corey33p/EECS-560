@@ -1,0 +1,8 @@
+troubleshooting notes:
+
+- data is not being destroyed as the prev and next pointers are being swapped, demonstrated by the previous pointer showing the data in the previous node as the next node is being handled
+- the print function is not causing problems because it is ran before any swapping happens, and the data still seems intact during the swapping procedure
+- swapping next and previous seems successful because of printouts of pointer to node and pointer to previous node
+- swapping head and tail doesn't seem to be the only problem, considering the print_list right before said swap fails
+
+In the end the problem seemed to be that the next and prev pointers weren't getting swapped in the very last node, the tail node. The consequence of this was that the tail node became the head node, and the head node next ptr was null, because it was previously the tail node next ptr. I added one more iteration to the loop that switched the next and prev pointers, and the problem was solved. 

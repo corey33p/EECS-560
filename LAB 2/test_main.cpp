@@ -40,6 +40,7 @@ if(inFile.is_open() and outfile.is_open())
   *  @Post Print all the DLL elemetns using iterator
   */
    myDlList<int>::iterator i;
+   outfile << "Printing all DLL elements using iterator:\n\n";
    for (i = dll.begin(); i != dll.end(); ++i)
     {
         outfile << *i << "\n";
@@ -60,6 +61,7 @@ if(inFile.is_open() and outfile.is_open())
   *  @Post Print all the DLL elemetns using const iterator
   */
    myDlList<int>::const_iterator c_i;
+   outfile << "Printing all DLL elements using const iterator:\n\n";
    for (c_i= dll2.begin(); c_i != dll2.end(); ++c_i)
     {
         outfile << *c_i << "\n";
@@ -73,6 +75,7 @@ if(inFile.is_open() and outfile.is_open())
   *  @Pre  The new DLL as input
   *  @Post Print all the DLL elemetns with out using iterators
   */
+  outfile << "Print all the DLL elemetns with out using iterators:\n\n";
     for (int& operatorRhsDLLVal : dll3) {
          outfile <<operatorRhsDLLVal<<"\n";
        }
@@ -80,21 +83,25 @@ if(inFile.is_open() and outfile.is_open())
   *  @Pre  DLL as input
   *  @Post Print DLL size
   */
+  outfile << "Print DLL size:\n\n";
     outfile << dll.size()<<"\n";
   /**
   *  @Pre  DLL as input
   *  @Post Print first element of DLL
   */
+  outfile << "Print first element of DLL:\n\n";
     outfile <<dll.front()<<"\n";
     /**
   *  @Pre  DLL as input
   *  @Post Print last element of DLL
   */
+  outfile << "Print last element of DLL:\n\n";
     outfile <<dll.back()<<"\n";
   /**
   *  @Pre  DLL as input
   *  @Post Check if DLL is emoty or not print 0 if empty 1 if not empty
   */
+  outfile << "Check if DLL is emoty or not print 0 if empty 1 if not empty:\n\n";
     if(dll.empty()==true)
          {
            outfile <<0<<"\n";
@@ -113,6 +120,7 @@ if(inFile.is_open() and outfile.is_open())
   *  @Pre  The new DLL as input
   *  @Post Print all the DLL elemetns with out using iterators : Reversed list
   */
+  outfile << "Print all the DLL elemetns with out using iterators : Reversed list:\n\n";
     for (int& reverserlistval : dll) {
          outfile <<reverserlistval<<"\n";
        }
@@ -123,7 +131,7 @@ if(inFile.is_open() and outfile.is_open())
     num=0;
   /**
   *  @Pre  DLL as input
-  *  @Post Add first 1o elements of inout instancefile into DLL using push back method and create a new DLL
+  *  @Post Add first 10 elements of inout instancefile into DLL using push back method and create a new DLL
   */
     myDlList<int> dll4;
     while(!inFile1.eof() and (count !=10))
@@ -138,6 +146,8 @@ if(inFile.is_open() and outfile.is_open())
   *  @Pre  The new DLL as input
   *  @Post Print all the DLL elemetns using iterators
   */
+  outfile << "After appending list:\n";
+  outfile << "Print all the DLL elemetns using iterators:\n\n";
    for (i = dll5.begin(); i != dll5.end(); ++i)
     {
         outfile << *i << "\n";
@@ -146,11 +156,13 @@ if(inFile.is_open() and outfile.is_open())
   *  @Pre  DLL as input
   *  @Post Print DLL size
   */
+  outfile << "Print DLL size:\n\n";
     outfile <<dll.size()<<"\n";
   /**
   *  @Pre  DLL as input
   *  @Post Print last element of DLL
   */
+  outfile << "Print last element of DLL:\n\n";
     outfile <<dll.back()<<"\n";
   /**
   *  @Pre  DLL as input
@@ -161,11 +173,13 @@ if(inFile.is_open() and outfile.is_open())
   *  @Pre  DLL as input
   *  @Post Print last element of DLL
   */
+  outfile << "Print last element of DLL:\n\n";
     outfile <<dll.back()<<"\n";
     /**
   *  @Pre  DLL as input
   *  @Post Print first  element of DLL
   */
+  outfile << "Print first  element of DLL:\n\n";
     outfile <<dll.front()<<"\n";
   /**
   *  @Pre  DLL as input
@@ -176,6 +190,7 @@ if(inFile.is_open() and outfile.is_open())
   *  @Pre  DLL as input
   *  @Post Print first element of DLL
   */
+  outfile << "Print first  element of DLL:\n\n";
     outfile <<dll.front()<<"\n";
   /**
   *  @Pre  DLL as input
@@ -186,11 +201,18 @@ if(inFile.is_open() and outfile.is_open())
   *  @Pre  DLL as input
   *  @Post Print DLL size :Must be 0
   */
+  outfile << "Print DLL size :Must be 0:\n\n";
     outfile << dll.size()<<"\n";
   }
 else
   {
-      cout << "The instance.txt file cannot be opened";
+      if (!inFile.is_open()){
+          cout<<"Could not access input file: "<<argv[1]<<endl;
+      }
+      if (!outfile.is_open()){
+          cout<<"Could not access output file: "<<argv[2]<<endl;
+      }
+      cout << "The instance.txt file cannot be opened"<<endl;
   }
 inFile.close();
 outfile.close();

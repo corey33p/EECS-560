@@ -1,6 +1,12 @@
-template <typename Object>
-class List {
+#ifndef DLLIST_H
+#define DLLIST_H
 
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+template <typename Object>
+class myDlList {
     private:
         struct Node {
             Object data;
@@ -47,7 +53,7 @@ class List {
                     return current->data;
                 }
                 const_iterator( Node *p ) : current{ p }{ }
-                friend class List<Object>;
+                friend class myDlList<Object>;
         };
         class iterator : public const_iterator{
             public:
@@ -78,41 +84,52 @@ class List {
                 }
             protected:
                 iterator( Node *p ) : const_iterator{ p }{ }
-                friend class List<Object>;
+                friend class myDlList<Object>;
         };
 
     public:
-        List( ){
+        myDlList( ){
             init( );
         }
-        List( const List & rhs ){
+        myDlList( const myDlList & rhs ){
             init( );
             for( auto & x : rhs ){
                 push_back( x );
             }
         }
-        ~List( ){
+        ~myDlList( ){
             clear( );
             delete head;
             delete tail;
         }
-        List & operator= ( const List & rhs ){
-            List copy = rhs;
+        myDlList & operator= ( const myDlList & rhs ){
+            myDlList copy = rhs;
             std::swap( *this, copy );
             return *this;
         }
-        List( List && rhs ): theSize{ rhs.theSize }, head{ rhs.head }, tail{ rhs.tail }{
+        myDlList( myDlList && rhs ): theSize{ rhs.theSize }, head{ rhs.head }, tail{ rhs.tail }{
             rhs.theSize = 0;
             rhs.head = nullptr;
             rhs.tail = nullptr;
         }
-        List & operator= ( List && rhs ){
+        myDlList & operator= ( myDlList && rhs ){
             std::swap( theSize, rhs.theSize );
             std::swap( head, rhs.head );
             std::swap( tail, rhs.tail );
             return *this;
         }
 
+        myDlList<Object> appendList(myDlList<Object> &data){
+            iterator listIterator{end()};
+            listIterator--;
+            for (int i = 0; i < theSize; i++){
+                Node *p = listIterator.current;
+                data.push_front(p->data);
+                listIterator--;
+            }
+            *this = data;
+            return data;
+        }
         iterator begin( ){
             return { head->next };
         }
@@ -168,13 +185,37 @@ class List {
             erase( --end( ) );
         }
         void reverselist(){
-            std::swap(head,tail);
-            iterator nodeReverser{begin()};
-            for (int i = 0; i < theSize; i++){
-                Node *p = iterator.current;
-                std::swap(p->prev,p->next);
-                nodeReverser++;
+            iterator nodeReverser{head};
+            for (int i = 0; i <= theSize+1; i++){
+                Node *p = nodeReverser.current;
+                if (p != nullptr){
+                    std::swap(p->prev,p->next);
+                    nodeReverser--;
+                } else {
+                    cout<<"\n\n\n\n!!Exited here.!!\n\n\n\n"<<endl;
+                    break;
+                }
             }
+            std::swap(head,tail);
+        }
+        void print_list(){
+            iterator listIterator{begin()};
+            Node *p = nullptr;
+            for (int i = 0; i < theSize; i++){
+                p = listIterator.current;
+                if (p == nullptr){
+                    cout<<"Error, node is empty.";
+                    return;
+                }else{
+                    cout<<p->data;
+                    if (i < theSize-1){
+                        cout<<",";
+                    }
+                    listIterator++;
+                }
+                p = nullptr;
+            }
+            cout<<endl;
         }
 
         iterator insert( iterator itr, const Object & x ) {
@@ -203,6 +244,9 @@ class List {
             }
             return to;
         }
+        // const int getSize(){
+        //     return theSize;
+        // }
     private:
         int theSize;
         Node *head;
@@ -215,3 +259,5 @@ class List {
             tail->prev = head;
         }
 };
+
+#endif

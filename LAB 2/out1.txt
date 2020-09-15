@@ -1,0 +1,156 @@
+Printing all DLL elements using iterator:
+
+507
+507
+362
+985
+258
+163
+180
+292
+184
+199
+890
+606
+430
+545
+387
+679
+46
+946
+441
+804
+18
+Printing all DLL elements using const iterator:
+
+507
+507
+362
+985
+258
+163
+180
+292
+184
+199
+890
+606
+430
+545
+387
+679
+46
+946
+441
+804
+18
+Print all the DLL elemetns with out using iterators:
+
+507
+507
+362
+985
+258
+163
+180
+292
+184
+199
+890
+606
+430
+545
+387
+679
+46
+946
+441
+804
+18
+Print DLL size:
+
+21
+Print first element of DLL:
+
+507
+Print last element of DLL:
+
+18
+Check if DLL is emoty or not print 0 if empty 1 if not empty:
+
+1
+Print all the DLL elemetns with out using iterators : Reversed list:
+
+18
+804
+441
+946
+46
+679
+387
+545
+430
+606
+890
+199
+184
+292
+180
+163
+258
+985
+362
+507
+507
+After appending list:
+Print all the DLL elemetns using iterators:
+
+18
+804
+441
+946
+46
+679
+387
+545
+430
+606
+18
+804
+441
+946
+46
+679
+387
+545
+430
+606
+890
+199
+184
+292
+180
+163
+258
+985
+362
+507
+507
+Print DLL size:
+
+21
+Print last element of DLL:
+
+507
+Print last element of DLL:
+
+507
+Print first  element of DLL:
+
+18
+Print first  element of DLL:
+
+804
+Print DLL size :Must be 0:
+
+0
