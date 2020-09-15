@@ -1,0 +1,25 @@
+** Make sure, you execute the code on cycle servers
+*** Compile and verify myStack.hpp and myQueue.hpp implementation with below command on command line
+
+>> g++ -std=c++11 myStack.hpp
+
+>> g++ -std=c++11 myQueue.hpp
+
+*** Compile and verify test_main.cpp implementation with below command on command line
+
+>> g++ -std=c++11 test_main.cpp
+
+*** this will create object file as "a.out" in the same folder
+*** execute the code with instance files
+
+
+>>./a.out instance1.txt output1_stack.txt output1_queue.txt
+
+*** This will create output1_stack.txt output1_queue.txt in the same folder. Verify the output
+
+
+Command to be used:
+>>g++ -std=c++11 myStack.hpp
+>> g++ -std=c++11 myQueue.hpp
+>>g++ -std=c++11 test_main.cpp
+>>./a.out instance1.txt output1_stack.txt output1_queue.txt

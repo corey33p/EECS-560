@@ -1,0 +1,58 @@
+
+items as they are added to the stack 
+lNxX
+iskNIh
+hdck
+TESpO
+fcHAz
+rqwIqB
+HgQ
+hrV
+JvHOk
+iCrTP
+ooPEr
+ZqtW
+COGjS
+TOz
+zGfyq
+CRqzw
+uqrs
+MOaDYn
+Hnzn
+DFib
+
+Remove last element of stack until 10 elements are popped 
+DFib
+Hnzn
+MOaDYn
+uqrs
+CRqzw
+zGfyq
+TOz
+COGjS
+ZqtW
+ooPEr
+
+top element of stack 
+iCrTP
+
+*  @Post Check if stack is empty or not print 0 if empty 1 if not empty 
+1
+
+Print all the stack elemetns and empty stack 
+iCrTP
+JvHOk
+hrV
+HgQ
+rqwIqB
+fcHAz
+TESpO
+hdck
+iskNIh
+lNxX
+
+Print top element of stack 
+DFib
+
+Check if stack is empty or not print 0 if empty 1 if not empty 
+0

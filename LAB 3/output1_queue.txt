@@ -1,0 +1,58 @@
+
+items as they are added to the queue 
+lNxX
+iskNIh
+hdck
+TESpO
+fcHAz
+rqwIqB
+HgQ
+hrV
+JvHOk
+iCrTP
+ooPEr
+ZqtW
+COGjS
+TOz
+zGfyq
+CRqzw
+uqrs
+MOaDYn
+Hnzn
+DFib
+
+Remove last element of queue until 10 elements are popped 
+lNxX
+iskNIh
+hdck
+TESpO
+fcHAz
+rqwIqB
+HgQ
+hrV
+JvHOk
+iCrTP
+
+front element of queue 
+ooPEr
+
+Check if queue is empty or not print 0 if empty 1 if not empty 
+1
+
+Print all the queue elemetns and empty queue 
+ooPEr
+ZqtW
+COGjS
+TOz
+zGfyq
+CRqzw
+uqrs
+MOaDYn
+Hnzn
+DFib
+
+ Print front element of queue 
+lNxX
+
+Check if queue is empty or not print 0 if empty 1 if not empty 
+0
