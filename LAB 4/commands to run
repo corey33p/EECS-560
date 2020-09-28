@@ -1,0 +1,23 @@
+./a.out In_Files/instance1.txt output1_stack.txt output1_queue.txt
+./a.out In_Files/instance2.txt output2_stack.txt output2_queue.txt
+./a.out In_Files/instance3.txt output3_stack.txt output3_queue.txt
+./a.out In_Files/instance4.txt output4_stack.txt output4_queue.txt
+./a.out In_Files/instance5.txt output5_stack.txt output5_queue.txt
+./a.out In_Files/instance6.txt output6_stack.txt output6_queue.txt
+./a.out In_Files/instance7.txt output7_stack.txt output7_queue.txt
+./a.out In_Files/instance8.txt output8_stack.txt output8_queue.txt
+./a.out In_Files/instance9.txt output9_stack.txt output9_queue.txt
+./a.out In_Files/instance10.txt output10_stack.txt output10_queue.txt
+
+
+valgrind ./a.out In_Files/instance1.txt output1_stack.txt output1_queue.txt
+valgrind ./a.out In_Files/instance2.txt output2_stack.txt output2_queue.txt
+valgrind ./a.out In_Files/instance3.txt output3_stack.txt output3_queue.txt
+valgrind ./a.out In_Files/instance4.txt output4_stack.txt output4_queue.txt
+valgrind ./a.out In_Files/instance5.txt output5_stack.txt output5_queue.txt
+valgrind ./a.out In_Files/instance6.txt output6_stack.txt output6_queue.txt
+valgrind ./a.out In_Files/instance7.txt output7_stack.txt output7_queue.txt
+valgrind ./a.out In_Files/instance8.txt output8_stack.txt output8_queue.txt
+valgrind ./a.out In_Files/instance9.txt output9_stack.txt output9_queue.txt
+valgrind ./a.out In_Files/instance10.txt output10_stack.txt output10_queue.txt
+
