@@ -1,0 +1,36 @@
+** Make sure, you execute the code on cycle servers
+*** Compile and verify myDlList.hpp myHashTable.hpp implementation with below command on command line
+
+>> g++ -std=c++11 myDlList.hpp
+>> g++ -std=c++11 myHashTable.hpp
+
+*** Compile and verify test_main.cpp implementation with below command on command line
+
+>> g++ -std=c++11 test_main.cpp
+
+*** this will create object file as "a.out" in the same folder
+*** execute the code with instance files
+
+
+>>./a.out instance1.txt output1.txt
+
+*** This will create output1.txt in the same folder. Verify the output
+
+
+Command to be used:
+>> g++ -std=c++11 myDlList.hpp
+>> g++ -std=c++11 myHashTable.hpp
+>> g++ -std=c++11 test_main.cpp
+>>./a.out instance1.txt output1.txt
+
+./a.out Instance_Files/instance1.txt output1.txt
+./a.out Instance_Files/instance2.txt output2.txt
+./a.out Instance_Files/instance3.txt output3.txt
+./a.out Instance_Files/instance4.txt output4.txt
+./a.out Instance_Files/instance5.txt output5.txt
+./a.out Instance_Files/instance6.txt output6.txt
+./a.out Instance_Files/instance7.txt output7.txt
+./a.out Instance_Files/instance8.txt output8.txt
+./a.out Instance_Files/instance9.txt output9.txt
+./a.out Instance_Files/instance10.txt output10.txt
+
