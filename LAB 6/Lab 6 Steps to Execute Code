@@ -1,0 +1,22 @@
+** Make sure, you execute the code on cycle servers
+*** Compile and verify myBinarySearchTree.hpp implementation with below command on command line
+
+>> g++ -std=c++11 myBinarySearchTree.hpp
+
+*** Compile and verify test_main.cpp implementation with below command on command line
+
+>> g++ -std=c++11 test_main.cpp
+
+*** this will create object file as "a.out" in the same folder
+*** execute the code with instance files
+
+
+>>./a.out instance1.txt output1.txt
+
+*** This will create output1.txt in the same folder. Verify the output
+
+
+Command to be used:
+>> g++ -std=c++11 myBinarySearchTree.hpp
+>> g++ -std=c++11 test_main.cpp
+>>./a.out instance1.txt output1.txt
