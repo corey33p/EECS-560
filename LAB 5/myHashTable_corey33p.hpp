@@ -18,7 +18,8 @@ template <typename hashitem>
 class myHashTable {
     public:
         explicit myHashTable( int size = 101 ){
-            currentSize = size;
+            // currentSize = size;
+            currentSize = 0;
             for (int i = 0;i < currentSize;i++){
                 theLists.push_back(myDlList<hashitem>());
             }
