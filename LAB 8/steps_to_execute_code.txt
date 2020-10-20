@@ -1,0 +1,29 @@
+** Make sure, you execute the code on cycle servers
+*** Compile and verify myLeftistHeap.hpp implementation with below command on command line
+*** Make sure you change the file name as instruction
+>> g++ -std=c++11 myLeftistHeap.hpp
+
+
+*** Compile and verify tester program main.cpp implementation with below command on command line
+*** You should include the correct header files in the main.cpp
+*** this will create executable with "a.out" in the same folder
+>> g++ -std=c++11 main.cpp
+
+
+*** execute the code with instance files
+>>./a.out instance1.txt
+
+
+*** this will print all your results on the standard output, i.e., the screen.
+*** If you want to save your output to a file, run the executable using
+>>./a.out instance1.txt > output1.txt
+
+
+*** now you can use other program, shell script, python, perl, etc. to verify your implementation.
+
+
+Command to be used:
+>> g++ -std=c++11 myLeftistHeap.hpp
+>> g++ -std=c++11 main.cpp
+>>./a.out instance1.txt
+>>./a.out instance1.txt > output1.txt
