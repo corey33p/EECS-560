@@ -1,0 +1,41 @@
+** Make sure, you execute the code on cycle servers
+*** Compile and verify myLeftistHeap.hpp implementation with below command on command line
+*** Make sure you change the file name as instruction
+>> g++ -std=c++11 myGraph.hpp
+
+
+*** Compile and verify tester program main.cpp implementation with below command on command line
+*** You should include the correct header files in the main.cpp
+*** this will create executable with "a.out" in the same folder
+>> g++ -std=c++11 main.cpp
+
+
+*** execute the code with instance files
+>>./a.out instance1.txt
+
+
+*** this will print all your results on the standard output, i.e., the screen.
+*** If you want to save your output to a file, run the executable using
+>>./a.out instance1.txt > output1.txt
+
+
+*** now you can use other program, shell script, python, perl, etc. to verify your implementation.
+
+*** To make sure you freed all allocated memory, use the memory leak detection tool valgrind (or whatever you prefer) ***
+>> valgrind --leak-check=full ./a.out instance1.txt
+***You will find the report printed on the screen.
+*** If you dismiss reported errors reported by valgrind, you might have "Segmentation fault (core dumped)" (runtime error)
+*** so your implementation doesn't generate any output. Then you will receive 0 because your submission doesn't generate any output.
+*** To benchmark the running time and used memory of your program, use the time tool ***
+>> /usr/bin/time -v -o output1.log ./a.out instance1.txt > output1.txt
+***You will the running information is reported in the file output1.log.
+***Find the running time after "Elapsed (wall clock) time (h:mm:ss or m:ss): "
+***Find the used memory after "Maximum resident set size (kbytes):"
+***Your program will be considered “fail” for the cases if
+***any of the running time or maximum resident set size exceeds 5 times of the provided benchmark file.
+
+Command to be used:
+>> g++ -std=c++11 myLeftistHeap.hpp
+>> g++ -std=c++11 main.cpp
+>>./a.out instance1.txt
+>>./a.out instance1.txt > output1.txt
