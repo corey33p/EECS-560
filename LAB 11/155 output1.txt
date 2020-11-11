@@ -1,0 +1,214 @@
+g++ -std=c++11 -g -Wall -c test_main.cpp myGraph.hpp
+g++ -std=c++11 -g -Wall test_main.o -o a.out
+rm -rf *.o *~ L11 *.gch
+# ./a.out Instance_Files/instance155.txt > output155.txt
+./a.out Instance_Files/instance155.txt
+0: 25 70
+1: 31 24 6
+2: 47 35 4
+3: 39 55 21
+4: 20 19
+5: 48 99
+6: 6 21
+7: 30 74
+8: 24 13
+
+
+0
+0
+0 1
+25
+0 2
+70
+0 1 3
+56
+0 1 4
+49
+0 1 5
+31
+0 1 4 6
+69
+0 1 4 7
+68
+0 1 4 6 8
+75
+
+1 3 0
+70
+1
+0
+1 4 6 2
+65
+1 3
+31
+1 4
+24
+1 5
+6
+1 4 6
+44
+1 4 7
+43
+1 4 6 8
+50
+
+2 3 0
+86
+2 3 0 1
+111
+2
+0
+2 3
+47
+2 4
+35
+2 5
+4
+2 5 6
+52
+2 4 7
+54
+2 5 6 8
+58
+
+3 0
+39
+3 0 1
+64
+3 6 2
+76
+3
+0
+3 7 8 4
+75
+3 7 8 5
+64
+3 6
+55
+3 7
+21
+3 7 8
+51
+
+4 7 0
+93
+4 7 0 1
+118
+4 6 2
+41
+4 6 2 3
+88
+4
+0
+4 6 8 5
+39
+4 6
+20
+4 7
+19
+4 6 8
+26
+
+5 6 2 3 0
+155
+5 6 2 3 0 1
+180
+5 6 2
+69
+5 6 2 3
+116
+5 6 8 4
+78
+5
+0
+5 6
+48
+5 6 8 4 7
+97
+5 6 8
+54
+
+6 2 3 0
+107
+6 2 3 0 1
+132
+6 2
+21
+6 2 3
+68
+6 8 4
+30
+6 8 5
+19
+6
+0
+6 8 4 7
+49
+6 8
+6
+
+7 0
+74
+7 0 1
+99
+7 8 4 6 2
+95
+7 0 1 3
+130
+7 8 4
+54
+7 8 5
+43
+7 8 4 6
+74
+7
+0
+7 8
+30
+
+8 4 7 0
+117
+8 4 7 0 1
+142
+8 4 6 2
+65
+8 4 6 2 3
+112
+8 4
+24
+8 5
+13
+8 4 6
+44
+8 4 7
+43
+8
+0
+# valgrind --leak-check=full ./a.out Instance_Files/instance1.txt
+# valgrind ./a.out Instance_Files/instance1.txt > output1.txt
+# valgrind ./a.out Instance_Files/instance3.txt > output3.txt
+# time ./a.out Instance_Files/instance4.txt
+# valgrind ./a.out Instance_Files/instance5.txt output5.txt
+# valgrind ./a.out Instance_Files/instance7.txt > output7.txt
+# valgrind ./a.out Instance_Files/instance8.txt > output8.txt
+# time ./a.out Instance_Files/instance1.txt > output1.txt
+# time ./a.out Instance_Files/instance2.txt > output2.txt
+# time ./a.out Instance_Files/instance3.txt > output3.txt
+# time ./a.out Instance_Files/instance4.txt > output4.txt
+# time ./a.out Instance_Files/instance5.txt > output5.txt
+# time ./a.out Instance_Files/instance6.txt > output6.txt
+# time ./a.out Instance_Files/instance7.txt > output7.txt
+# time ./a.out Instance_Files/instance8.txt > output8.txt
+# time ./a.out Instance_Files/instance9.txt > output9.txt
+# time ./a.out Instance_Files/instance10.txt > output10.txt
+# diff output1.txt Output_Files/output1.txt -w -s
+# diff output2.txt Output_Files/output2.txt -w -s
+# diff output3.txt Output_Files/output3.txt -w -s
+# diff output4.txt Output_Files/output4.txt -w -s
+# diff output5.txt Output_Files/output5.txt -w -s
+# diff output6.txt Output_Files/output6.txt -w -s
+# diff output7.txt Output_Files/output7.txt -w -s
+# diff output8.txt Output_Files/output8.txt -w -s
+# diff output9.txt Output_Files/output9.txt -w -s
+# diff output10.txt Output_Files/output10.txt -w -s
+corey@corey-770Z7E:~/Desktop/EECS 560/LAB 11$
